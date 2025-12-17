@@ -1,0 +1,109 @@
+:root{
+    --color1:#0E131F;
+    --color2:#38405F;
+    --color3:#59546C;
+    --color4:#8B939C;
+    --color5:#FF0035;
+    --color6:red;
+    --color7:#8BA6A9;
+
+    --tipografia1: arial helvetica; sans-serif;
+    --tipografia2: verdana;
+    --tipografia3:"fascinete inline", system-ui ;
+    --tipografia4: times;
+}
+
+
+@font-face {
+    font-family: 'Andada SC';
+    src: url('fonts/AndadaSC-Regular.woff2') format('woff2'),
+        url('fonts/AndadaSC-Regular.woff') format('woff'),
+        url('fonts/AndadaSC-Regular.ttf') format('truetype'),
+        url('fonts/AndadaSC-Regular.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+
+body {
+    font-size: 2rem;
+    font-family:var(--tipografia1);
+    text-align: center;
+}
+
+h1 {
+    font-family: var(--tipografia3);
+    font-weight: 400;
+    font-style: normal;
+}
+
+p {
+    font-family: var(--tipografia4);
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+    margin: 0 auto;
+    max-width:1920px;
+    font-family: 'Andada SC';
+}
+
+.progres {
+    height: 10px;
+    width: 100%;
+    background: var(--color4);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    scale: 0 1;
+    animation: analitzador linear;
+    animation-timeline: scroll();
+}
+
+@keyframes analitzador {
+    to {
+        scale: 1 1;
+    }
+}
+
+@media (max-width:480px)
+{
+    body {
+        background-color: var(--color6);
+    }
+}
+
+@media (min-width:481px) and (max-width:1279px)
+{
+    body {
+        background-color: var(--color7);
+    }
+
+    p{
+        margin:2rem;
+    }
+}
+
+@media (min-width:1280px)
+{
+    body {
+        background-color: var(--color5);
+    }
+
+    p{
+        columns: 2;
+        text-align:justify;
+    }
+}
+
+.rodona{
+    width: 15rem;
+    height:15rem;
+    background: var(--color1);
+    border-radius: 50%;
+    margin: auto;
+    
+}

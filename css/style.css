@@ -1,0 +1,131 @@
+:root {
+    /* Aquí hi van les variables */
+}
+
+{
+    /* Aquí hi va el reset */
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+@font-face {
+    /* Aquí hi van les fonts personalitzades */
+    font-family: 'Billion Stars Personal Use';
+    src: url('BillionStarsPersonalUse.eot');
+    src: url('../fonts/BillionStarsPersonalUse.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/BillionStarsPersonalUse.woff2') format('woff2'),
+        url('../fonts/BillionStarsPersonalUse.woff') format('woff'),
+        url('../fonts/BillionStarsPersonalUse.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face{ 
+	font-family: 'mario';
+	src: url('../fonts/TrashHand-webfont.eot');
+	src: url('../fonts/TrashHand-webfont.eot?iefix') format('eot'),
+	     url('../fonts/TrashHand-webfont.woff') format('woff'),
+	     url('../fonts/TrashHand-webfont.ttf') format('truetype'),
+	     url('../fonts/TrashHand-webfont.svg#webfont') format('svg');
+}
+
+
+    /* Aquí hi van propietats generals */
+
+body {
+    background: white;
+    text-align: center;
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+
+}
+.cap{
+    width: auto;
+    height: 300px;
+    text-align: center;
+    align-content: center;
+    
+}
+
+li { 
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    background: blue;
+    margin: 1rem;
+    float: left;
+    list-style-type: none;
+    text-align: center;
+    align-content: center;
+}
+
+ a:link{
+    line-height: 10rem;
+    color: white;
+    text-decoration: none;
+ }
+ a:visited{
+    color: white;
+ }
+ a:hover{
+    color: red;
+
+ }
+
+ a:active{
+    color: aqua;
+ }
+ul {
+    width: 36rem;
+    margin: auto;
+    margin-top: 500px;
+
+}
+
+h1{
+   font-size: 200px;
+    color:black;
+    text-align: top;
+    font-family: 'mario';
+    
+ }
+
+
+
+
+    /* Aquí hi van propietats responsives */
+
+
+
+@media (max-width:480px) 
+    /* Aquí hi va la versió mòbil */
+ {
+
+    
+ }
+
+@media (min-width:481px) and (max-width:1279px) 
+ {
+
+        li {
+            background: green;
+        }
+    
+ }
+
+
+@media (min-width:1280px)
+ {
+    body {
+        background: pink;
+    }
+
+ }
+
+ .h1{
+    size: 2rem;
+    color:aquamarine;
+ }

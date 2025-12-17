@@ -1,0 +1,255 @@
+body{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.contenidor{
+    width: 1716px;
+    margin: auto;
+}
+.nav{
+        height: 166px;
+}
+.friends{
+
+
+    height: 180px;
+    width: 1300px;
+    margin: auto;      
+
+}
+
+.pics{
+     height: 1860px;
+}
+
+.logo{
+    width: 222px;
+    height: 50px;
+    background-color: yellow;
+    float: left;
+    background-image:url(../img/logo.jpg);
+    margin: 40px 0 0 0;
+}
+
+.menu{
+    width: 343px;
+    height: 50px;
+    float: left;
+    margin: 40px 0 0 465px;
+}
+
+.menu ul li{
+    width: 40px;
+    height: 40px;
+    margin: 0 10px;
+    float: left;
+    display: block;
+    background-image: url(../img/menu.jpg);
+
+}
+
+.menu ul li:hover{
+    opacity: 0.6;
+}
+.inici{
+    background-position: -17px -7px;
+}
+.cerca{
+    background-position: -102px -7px;
+}
+.directes{
+    background-position: -185px -7px;
+}
+.favorits{
+    background-position: -269px -7px;
+}
+menu ul{
+    margin:0;
+}
+.perfil{
+    width: 80px;
+    height: 120px;
+    margin: 20px;
+    float: left;
+    text-align: center;
+    opacity: 0.6;
+    
+}
+.perfil:hover{
+opacity: 1;
+}
+.foto{
+    width: 80px;
+    height: 80px;
+    background-color: aliceblue;
+    border-radius: 50%;
+    background-image:url(../perfil/balde.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: red 5px solid;
+    box-shadow: inset 0px 0px 2px white;
+}
+.Tolga{
+    background-image: url(../perfil/1035445_pau_cubarsi_20240914123715.png);
+    
+}
+
+.Alba{
+    background-image: url(../perfil/barji.jpeg);
+}
+.Jana{
+    background-image: url(../perfil/fermi.jpeg);
+}
+.Miki{
+    background-image: url(../perfil/gitanoman.jpeg);
+}
+.Marc{
+    background-image: url(../perfil/nomo.jpeg);
+}
+.Judit{
+    background-image: url(../perfil/porte.jpeg);
+}
+.Mario{
+    background-image: url(../perfil/rafa.jpeg);
+}
+.Nil{
+    background-image: url(../perfil/rashford.jpeg);
+}
+.JCarlos{
+    background-image: url(../perfil/robert.jpeg);
+}
+.afegir{
+    width: 20px;
+    height: 20px;
+    background: blue;
+    border-radius: 50%;
+    border: 5px solid white;
+    position: relative;
+    left: 60px;
+    top: -80px;
+    color: white;
+     text-align: center;
+    line-height: 20px;
+}
+
+.post{
+    width: 536px;
+    height: 620px;
+    margin: 18px;
+    float: left;
+}
+
+.imatge{
+    width: 536px;
+    height: 536px;
+    background-image: url(../img/ifpagram_14.jpg);
+}
+.imatge2{
+    width: 536px;
+    height: 536px;
+    background-image: url(../img/ifpagram_16.jpg);
+}
+.imatge3{
+    width: 536px;
+    height: 536px;
+    background-image: url(../img/ifpagram_18.jpg);
+}
+
+.imatge4{
+    width: 536px;
+    height: 536px;
+    background-image: url(../img/ifpagram_23.jpg);
+}
+
+.imatge5{
+    width: 536px;
+    height: 536px;
+    background-image: url(../img/ifpagram_24.jpg);
+}
+.imatge6{
+    width: 536px;
+    height: 536px;
+    background-image: url(../img/ifpagram_25.jpg); 
+}
+.imatge7{
+    width: 536px;
+    height: 536px;
+    background-image: url(../img/ifpagram_30.jpg); 
+}
+.imatge8{
+    width: 536px;
+    height: 536px;
+    background-image: url(../img/ifpagram_31.jpg); 
+}
+.imatge9{
+    width: 536px;
+    height: 536px;
+    background-image: url(../img/ifpagram_32.jpg); 
+}
+
+.info{
+    width:268px ;
+    height: 84px;
+    float: left;
+}
+
+.reaccions{
+    width:268px ;
+    height: 84px;
+    float: left;
+}
+
+.autor{
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+    float: left;
+    background-image: url(../perfil/gitanoman.jpeg);
+    border-radius: 50%;
+    background-size: cover;
+
+
+}
+
+.usuari{
+    height: 25px;
+    width: 198px;
+    margin: 10px 0 0 0;
+    float: left;
+}
+
+.quan{
+    height: 25px;
+    width: 198px;
+    margin: 0;
+    float: left;
+    color: grey;
+    font-size: 12px;
+}
+.likes{
+    height: 25px;
+    width: 134px;
+    margin: 10px 0 0 0;
+    float: left;
+    text-align: right;
+}
+.cors{
+    height: 25px;
+    width: 67px;
+    margin: 10px 0 0 0;
+    float: left;
+    background-image: url(../img/menu.jpg);
+    background-position: -90px 0;
+    background-size: 200%;
+    background-repeat: no-repeat;
+    
+    }
+
+    
+.mes{
+    height: 25px;
+    width: 67px;
+    margin: 10px 0 0 0;
+    float: left;
+    text-align: left;
+}

@@ -1,0 +1,95 @@
+.htmlNoPages .gwd-motion-path-x74c-anim-x {
+  --gwd-motion-path: {
+    "tangentFollowing":false, "sections":[ {
+      "controlPoints": ["0px", "0px", "553.3px", "-128.91px", "487.75px", "180.48px", "422px", "490px"], "startTimeMs": 0, "endTimeMs": 1200, "easing": "ease-out"
+    }
+    , {
+      "controlPoints": ["422px", "490px", "1003.06px", "587.72px", "1325.16px", "466.6px", "1139px", "-84px"], "startTimeMs": 1200, "endTimeMs": 2300, "easing": "ease-in-out"
+    }
+    ], "positionTol":0.5, "angleTol":1, "optimizationLevel":0
+  }
+  ;
+  animation: 2.3s linear 0s 1 normal forwards running gwd-motion-path-x74c-keys-x;
+  transform: translate3d(0px, 0px, 0px);
+}
+@keyframes gwd-motion-path-x74c-keys-x {
+  0% {
+    transform: translate3d(0px, 0px, 0px);
+    animation-timing-function: cubic-bezier(0.3183, 0.3464, 0.648, 0.6875);
+  }
+  13.04% {
+    transform: translate3d(337.35px, 0px, 0px);
+    animation-timing-function: cubic-bezier(0.2609, 0.3845, 0.5491, 0.8216);
+  }
+  20.87% {
+    transform: translate3d(452.85px, 0px, 0px);
+    animation-timing-function: cubic-bezier(0.1962, -1.2808, 0.5949, 1.0635);
+  }
+  52.17% {
+    transform: translate3d(422px, 0px, 0px);
+    animation-timing-function: cubic-bezier(0.4939, 0.0108, 0.8084, 0.6229);
+  }
+  64.13% {
+    transform: translate3d(580.45px, 0px, 0px);
+    animation-timing-function: cubic-bezier(0.3856, 0.2783, 0.6796, 0.6537);
+  }
+  76.09% {
+    transform: translate3d(1031.96px, 0px, 0px);
+    animation-timing-function: cubic-bezier(0.2084, 0.3996, 0.4496, 1.0256);
+  }
+  84.46% {
+    transform: translate3d(1191.76px, 0px, 0px);
+  }
+  85.65% {
+    transform: translate3d(1189.86px, 0px, 0px);
+    animation-timing-function: cubic-bezier(0.3188, 0.2766, 0.519, 0.9641);
+  }
+  100% {
+    transform: translate3d(1139px, 0px, 0px);
+  }
+}
+.htmlNoPages .gwd-motion-path-x74c-anim-y {
+  animation: 2.3s linear 0s 1 normal forwards running gwd-motion-path-x74c-keys-y;
+  transform: translate3d(0px, 0px, 0px);
+}
+@keyframes gwd-motion-path-x74c-keys-y {
+  0% {
+    transform: translate3d(0px, 0px, 0px);
+    animation-timing-function: cubic-bezier(0.6356, -1.0095, 0.8373, 0.2989);
+  }
+  19.57% {
+    transform: translate3d(0px, 81.39px, 0px);
+    animation-timing-function: cubic-bezier(0.2885, 0.3685, 0.589, 0.7609);
+  }
+  43.04% {
+    transform: translate3d(0px, 446.95px, 0px);
+    animation-timing-function: cubic-bezier(0.2036, 0.3503, 0.5337, 0.9749);
+  }
+  52.17% {
+    transform: translate3d(0px, 490px, 0px);
+    animation-timing-function: cubic-bezier(0.4915, 0.0412, 0.6236, 0.8263);
+  }
+  68.91% {
+    transform: translate3d(0px, 520.68px, 0px);
+    animation-timing-function: cubic-bezier(0.5958, -0.0259, 0.7926, 0.5508);
+  }
+  80.87% {
+    transform: translate3d(0px, 318.29px, 0px);
+    animation-timing-function: cubic-bezier(0.3187, 0.3477, 0.6366, 0.6976);
+  }
+  86.85% {
+    transform: translate3d(0px, 104.44px, 0px);
+    animation-timing-function: cubic-bezier(0.1901, 0.3808, 0.5029, 0.99);
+  }
+  100% {
+    transform: translate3d(0px, -84px, 0px);
+  }
+}
+[data-gwd-motion-path-node] {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}

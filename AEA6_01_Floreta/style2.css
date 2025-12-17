@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Flor con perro caminando (CSS)</title>
+  <style>
+    :root{
+      --sky:#a9e0ff;
+      --ground:#4aa14a;
+      --dirt:#376b2f;
+      --flower-petal:#ff6fb5;
+      --flower-center:#ffd24d;
+      --dog-body:#8b5a2b;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;font-family:system-ui,Segoe UI,Roboto,Arial;background:linear-gradient(#cfefff 0%, var(--sky) 50%, #bfe8ff 100%);height:100vh;display:flex;align-items:flex-end;justify-content:center}
+
+    /* contenedor principal */
+    .scene{width:100%;max-width:900px;height:70vh;position:relative;overflow:hidden}
+
+    /* Suelo */
+    .ground{
+      position:absolute;left:0;right:0;bottom:0;height:30%;background:linear-gradient(var(--ground) 0%, var(--dirt) 100%);
+      box-shadow: inset 0 6px 20px rgba(0,0,0,0.12);
+    }
+    /* pequeña textura de hierba */
+    .ground::before{
+      content:"";position:absolute;left:0;right:0;top:0;height:50%;background-image:radial-gradient(circle at 10% 20%, rgba(255,255,255,0.03) 0 2px, transparent 3px), radial-gradient(circle at 40% 60%, rgba(255,255,255,0.02) 0 2px, transparent 3px);
+      opacity:0.7;
+    }
+
+    /* Flor hecha con CSS (puedes reemplazar con tu versión) */
+    .flower{
+      position:absolute;left:6%;bottom:30%;width:120px;height:160px;display:flex;align-items:center;justify-content:center;flex-direction:column;transform-origin:center bottom;filter:drop-shadow(0 6px 6px rgba(0,0,0,0.12));
+    }
+    .stem{width:6px;height:100px;background:linear-gradient(#2e8b57,#1f6a3e);border-radius:6px}
+    .petals{position:relative;width:120px;height:80px;margin-bottom:8px}
+    .petal{position:absolute;width:52px;height:52px;background:var(--flower-petal);border-radius:50%;transform-origin:50% 100%;box-shadow:0 4px 6px rgba(0,0,0,0.12)}
+    .petal.p1{left:50%;top:0;transform:translate(-50%,0) rotate(0deg)}
+    .petal.p2{left:72%;top:22%;transform:translate(-50%,0) rotate(72deg)}
+    .petal.p3{left:28%;top:22%;transform:translate(-50%,0) rotate(-72deg)}
+    .petal.p4{left:12%;top:50%;transform:translate(-50%,0) rotate(-140deg)}
+    .petal.p5{left:88%;top:50%;transform:translate(-50%,0) rotate(140deg)}
+    .center{position:absolute;width:46px;height:46px;border-radius:50%;background:var(--flower-center);left:50%;top:32%;transform:translate(-50%,-50%);box-shadow:inset 0 -4px 6px rgba(0,0,0,0.08)}
+
+    /* Perro (con partes simples) */
+    .dog-wrap{position:absolute;bottom:30%;left:-20%;width:220px;height:120px;pointer-events:none}
+    .dog{position:relative;width:220px;height:120px;transform-origin:center bottom}
+
+    /* animación de caminar: recorre la escena de izquierda a derecha y vuelve */
+    @keyframes walkAcross{0%{transform:translateX(-40vw)}50%{transform:translateX(90vw)}100%{transform:translateX(-40vw)}}
+    .dog{animation:walkAcross 10s linear infinite}
+
+    /* partes */
+    .dog .body{position:absolute;left:60px;top:30px;width:120px;height:60px;background:var(--dog-body);border-radius:30px 30px 20px 20px}
+    .dog .belly{position:absolute;left:102px;top:54px;width:58px;height:30px;border-radius:50%;background:rgba(255,255,255,0.06)}
+    .dog .head{position:absolute;left:6px;top:16px;width:64px;height:48px;background:var(--dog-body);border-radius:18px}
+    .dog .ear{position:absolute;width:18px;height:26px;background:#5f3f20;border-radius:12px;top:6px;left:8px;transform:rotate(-15deg)}
+    .dog .eye{position:absolute;width:8px;height:8px;background:#111;border-radius:50%;top:24px;left:34px}
+    .dog .snout{position:absolute;left:44px;top:30px;width:24px;height:14px;background:#6b3f20;border-radius:8px}
+    .dog .nose{position:absolute;width:6px;height:6px;background:#111;border-radius:50%;right:4px;top:4px}
+
+    /* cola */
+    .dog .tail{position:absolute;left:170px;top:26px;width:40px;height:12px;background:var(--dog-body);border-radius:12px;transform-origin:left center;animation:wag 0.4s linear infinite alternate}
+    @keyframes wag{from{transform:rotate(10deg)}to{transform:rotate(-30deg)}}
+
+    /* patas - animadas con rotación (simula paso) */
+    .leg{position:absolute;width:14px;height:36px;background:var(--dog-body);bottom:0;border-radius:8px}
+    .leg.fl{left:72px;animation:legFL 0.6s ease-in-out infinite}
+    .leg.fr{left:118px;animation:legFR 0.6s ease-in-out infinite}
+    .leg.bl{left:86px;animation:legBL 0.6s ease-in-out infinite}
+    .leg.br{left:132px;animation:legBR 0.6s ease-in-out infinite}
+
+    @keyframes legFL{0%{transform:rotate(15deg)}50%{transform:rotate(-18deg)}100%{transform:rotate(15deg)}}
+    @keyframes legFR{0%{transform:rotate(-18deg)}50%{transform:rotate(15deg)}100%{transform:rotate(-18deg)}}
+    @keyframes legBL{0%{transform:rotate(-12deg)}50%{transform:rotate(14deg)}100%{transform:rotate(-12deg)}}
+    @keyframes legBR{0%{transform:rotate(14deg)}50%{transform:rotate(-12deg)}100%{transform:rotate(14deg)}}
+
+    /* sombra del perro sobre el suelo para anclarlo visualmente */
+    .dog-shadow{position:absolute;left:60px;bottom:-6px;width:96px;height:18px;background:rgba(0,0,0,0.17);border-radius:50%;filter:blur(6px);transform-origin:center;animation:shadowStretch 0.6s ease-in-out infinite}
+    @keyframes shadowStretch{0%{transform:scaleX(0.95)}50%{transform:scaleX(1.02)}100%{transform:scaleX(0.95)}}
+
+    /* ajuste para que el perro vaya verdaderamente sobre el suelo y no encima del cielo */
+    .scene .ground{z-index:2}
+    .dog-wrap{z-index:3}
+    .flower{z-index:4}
+
+    /* responsivo: si el contenedor es pequeño, reducir tamaño del perro */
+    @media (max-width:500px){
+      .dog-wrap{width:150px;height:80px;bottom:28%}
+      .dog .body{left:45px;width:90px;height:44px}
+      .dog .head{left:4px;width:48px;height:36px}
+      .dog{animation-duration:8s}
+    }
+  </style>
+</head>
+<body>
+  <div class="scene">
+
+    <!-- Flor (puedes pegar aquí tu versión si ya la tienes) -->
+    <div class="flower" aria-hidden>
+      <div class="petals">
+        <div class="petal p1"></div>
+        <div class="petal p2"></div>
+        <div class="petal p3"></div>
+        <div class="petal p4"></div>
+        <div class="petal p5"></div>
+        <div class="center"></div>
+      </div>
+      <div class="stem"></div>
+    </div>
+
+    <!-- Perro que camina -->
+    <div class="dog-wrap" aria-hidden>
+      <div class="dog">
+        <div class="body"></div>
+        <div class="belly"></div>
+        <div class="head">
+          <div class="ear"></div>
+          <div class="eye"></div>
+          <div class="snout"><div class="nose"></div></div>
+        </div>
+        <div class="tail"></div>
+        <div class="leg fl leg"></div>
+        <div class="leg fr leg"></div>
+        <div class="leg bl leg"></div>
+        <div class="leg br leg"></div>
+        <div class="dog-shadow"></div>
+      </div>
+    </div>
+
+    <!-- Suelo -->
+    <div class="ground"></div>
+  </div>
+
+  <!-- No JS necesario, todo es CSS. -->
+</body>
+</html>

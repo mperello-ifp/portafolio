@@ -1,0 +1,238 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background:#222 ;
+    color: white;
+    margin: 0;
+    padding-top: 50px;
+}
+
+.contenidor:hover{
+    opacity: 50%;
+}
+.contenidor {
+    width:  175px;
+    margin: 20px 0px 0px 20px;
+    float: left;
+
+}
+
+.portada {
+    
+    height: 260px;
+    width: 175px;
+    border-radius: 5px;
+
+}
+.portada.p1 {
+    background-image: url(img/1982Koyaanisqatsi.jpg);
+}
+
+.portada.p2 {
+    background-image: url(img/2004YTuQueSabes.jpg);
+}
+.portada.p3 {
+    background-image: url(img/2005Earthlings.jpg);
+}
+.portada.p4{
+    background-image: url(img/2007Helvetica.jpg);
+}
+.portada.p5 {
+    background-image: url(img/2007Sicko.jpg);
+}
+.portada.p6 {
+    background-image: url(img/2008Zeitgeist2.jpg);
+}
+.portada.p7 {
+    background-image: url(img/2009ArtAndCopy.jpg);
+}
+.portada.p8 {
+    background-image: url(img/2009Home.jpg);
+}
+.portada.p9 {
+    background-image: url(img/2009RipARemixManifesto.jpg);
+}
+.portada.p10 {
+    background-image: url(img/2010ComprarTirarComprar.jpg);
+}
+.portada.p11 {
+    background-image: url(img/2010InsideJob.jpg);
+}
+
+    
+
+.titol {
+    margin-top: -10px;
+}
+
+.any {
+    font-size: 14px;
+    float: left;
+    margin-top: -20px;
+}
+
+.tipus {
+    font-size: 14px;
+    display: flex;
+    float: right;
+    margin-top: -20px;
+}
+
+h2{
+    
+    position:relative;
+    clear: both;
+    padding: left;
+    color: white;
+}
+
+.portada.p12 {
+    background-image: url(img/2011LaDoctrinaDeShock.jpg);
+    filter: grayscale(100%);
+}
+.portada.p13 {
+    background-image: url(img/2012SearchingForSugarMan.jpg);
+    filter: grayscale(100%);
+}
+.portada.p14 {
+    background-image: url(img/2012TheActOfKilling.jpg);
+    filter: grayscale(100%);
+}
+.portada.p15 {
+    background-image: url(img/2013ElEspirituDel45.jpg);
+    filter: grayscale(100%);
+}
+
+
+.portada.p16 {
+    background-image: url(img/XXXXpeli.jpg);
+    
+}
+.portada.p17 {
+    background-image: url(img/XXXXpeli.jpg);
+}
+
+.portada.p18 {
+    background-image: url(img/XXXXpeli.jpg);
+    filter: grayscale(100%);
+}
+.portada.p19 {
+    background-image: url(img/XXXXpeli.jpg);
+    filter: grayscale(100%);
+}
+
+.portada.p20 {
+    background-image: url(img/XXXXserie.jpg);
+    
+}
+.portada.p21 {
+    background-image: url(img/XXXXserie.jpg);
+}
+
+.portada.p22 {
+    background-image: url(img/XXXXserie.jpg);
+    filter: grayscale(100%);
+}
+.portada.p23 {
+    background-image: url(img/XXXXserie.jpg);
+    filter: grayscale(100%);;
+}
+
+.cabecera {
+    background-color: black;
+    height: 50px;
+    width: 100%;
+    position: fixed;
+    opacity: 0.5;
+    z-index: 2;
+    top:0;
+    left:0;
+}
+
+.logo {
+    height: 40px;
+    width: 40px;
+    background-image: url(img/logo.png);
+    background-repeat: no-repeat;
+    margin: 5px 20px 5px 20px;
+    position: relative;
+    top: 5px;
+    float: left;
+}
+
+.documentals {
+    height: 50px;
+    width: 120px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    text-align: center;
+    align-items: center;
+    color: #FFF;
+    float: left;
+    margin: 0px 5px 0 50px;
+}
+
+.peliculas {
+    height: 50px;
+    width: 100px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    text-align: center;
+    align-items: bottom;
+    color: #FFF;
+    float: left;
+    margin: 0 5px 0 0;
+}
+
+.seriescabecera {
+    height: 50px;
+    width: 80px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    text-align: center;
+    align-items: center;
+    color: #FFF;
+    float: left;
+    margin: 0 5px 0 0;
+}
+
+.plus {
+    height: 50px;
+    width: 50px;
+    float: right;
+    position: relative;
+    bottom: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: right;
+    align-items: right;
+    font-size: 20px;
+    color: #FFF;
+    margin: 0px 10px 0px 5px;
+}
+
+.twitter {
+    height: 50px;
+    width: 70px;
+    float: right;
+    position: relative;
+    bottom: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: right;
+    align-items: right;
+    font-size: 20px;
+    color: #FFF;
+    margin: 0px 0px 0px 0px;
+}
+
+.facebook {
+    height: 50px;
+    width: 90px;
+    float: right;
+    position: relative;
+    bottom: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: right;
+    align-items: right;
+    font-size: 20px;
+    color: #FFF;
+    margin: 0px 5px 0px 10px;
+}

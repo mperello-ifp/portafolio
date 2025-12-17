@@ -1,0 +1,179 @@
+body{
+    background:#222;
+    font-family: Helvetica, sans-serif;
+    margin: 0;
+}
+
+.nav{
+    height: 30px;
+    background: black;
+    margin:auto;
+    
+}
+
+.logo{
+    background-image:url(img/logo.png);
+    height: 100px;
+    margin: 20px 5px;
+    background-repeat: no-repeat;
+}
+
+.noms{
+    color: #fff;
+display: inline-block;
+}
+.sub{
+    width: 175px;
+}
+
+.foto{
+    margin: 10px;
+    background-repeat: no-repeat;
+}
+.foto1{
+    width: 200px;
+    height: 300px;
+    background-image: url(img/1982Koyaanisqatsi.jpg);
+    float: left;
+    margin: 10px;
+    border-radius: 5%;
+    background-repeat: no-repeat;
+
+}
+
+.foto2{
+    width: 200px;
+    height: 300px;
+    background-image: url(img/2004YTuQueSabes.jpg);
+    float: left;
+    margin: 10px;
+    border-radius: 5%;
+    background-repeat: no-repeat;
+}
+
+.foto3{
+    width: 200px;
+    height: 300px;
+    background-image: url(img/2005Earthlings.jpg);
+    float: left;
+    margin: 10px;
+    border-radius: 5%;
+    background-repeat: no-repeat;
+}
+
+.foto4{
+    width: 200px;
+    height: 300px;
+    background-image: url(img/2007Helvetica.jpg);
+    float: left;
+    margin: 10px;
+    border-radius: 5%;
+    background-repeat: no-repeat;
+}
+.foto5{
+    width: 200px;
+    height: 300px;
+    background-image: url(img/2007Sicko.jpg);
+    float: left;
+    margin: 10px;
+    border-radius: 5%;
+    background-repeat: no-repeat;
+}
+.foto6{
+    width: 200px;
+    height: 300px;
+    background-image: url(img/2008Zeitgeist2.jpg);
+    float: left;
+    margin: 10px;
+    border-radius: 5%;
+    background-repeat: no-repeat;
+}
+
+.foto7{
+    width: 200px;
+    height: 300px;
+    background-image: url(img/2009ArtAndCopy.jpg);
+    float: left;
+    margin: 10px;
+    border-radius: 5%;
+    background-repeat: no-repeat;
+}
+
+.foto8{
+    width: 200px;
+    height: 300px;
+    background-image: url(img/2009RipARemixManifesto.jpg);
+    float: left;
+    margin: 10px;
+    border-radius: 5%;
+    background-repeat: no-repeat;
+}
+
+.foto9{
+    width: 200px;
+    height: 300px;
+    background-image: url(img/2010ComprarTirarComprar.jpg);
+    float: left;
+    margin: 10px;
+    border-radius: 5%;
+    background-repeat: no-repeat;
+}
+
+.foto10{
+    width: 200px;
+    height: 300px;
+    background-image: url(img/2010InsideJob.jpg);
+    float: left;
+    margin: 10px;
+    border-radius: 5% ;
+    background-repeat: no-repeat;
+    
+}
+.foto11{
+    width: 200px;
+    height: 300px;
+    background-image: url(img/2011LaDoctrinaDeShock.jpg);
+    float: left;
+    margin: 10px;
+    border-radius: 5% ;
+    background-repeat: no-repeat;
+    filter: grayscale(60%);
+    
+}
+.foto12{
+    width: 200px;
+    height: 300px;
+    background-image: url(img/2012SearchingForSugarMan.jpg);
+    float: left;
+    margin: 10px;
+    border-radius: 5% ;
+    background-repeat: no-repeat;
+    filter: grayscale(60%);
+    
+}
+
+.foto13{
+    width: 200px;
+    height: 300px;
+    background-image: url(img/2012TheActOfKilling.jpg);
+    float: left;
+    margin: 10px;
+    border-radius: 5% ;
+    background-repeat: no-repeat;
+    filter: grayscale(60%);
+    
+    
+}
+.foto14{
+    width: 200px;
+    height: 300px;
+    background-image: url(img/2013ElEspirituDel45.jpg);
+    float: left;
+    margin: 10px;
+    border-radius: 5% ;
+    background-repeat: no-repeat;
+    filter: grayscale(60%);
+    
+}
+
+
