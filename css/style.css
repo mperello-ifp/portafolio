@@ -1,131 +1,243 @@
-:root {
-    /* Aquí hi van les variables */
-}
-
-{
-    /* Aquí hi va el reset */
+/* =====================
+   RESET
+===================== */
+* {
     margin: 0;
     padding: 0;
-    border: 0;
+    box-sizing: border-box;
 }
 
-@font-face {
-    /* Aquí hi van les fonts personalitzades */
-    font-family: 'Billion Stars Personal Use';
-    src: url('BillionStarsPersonalUse.eot');
-    src: url('../fonts/BillionStarsPersonalUse.eot?#iefix') format('embedded-opentype'),
-        url('../fonts/BillionStarsPersonalUse.woff2') format('woff2'),
-        url('../fonts/BillionStarsPersonalUse.woff') format('woff'),
-        url('../fonts/BillionStarsPersonalUse.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
+html, body {
+    height: 100%;
+    font-family: 'Playfair Display', serif;
+    scroll-behavior: smooth;
 }
 
-@font-face{ 
-	font-family: 'mario';
-	src: url('../fonts/TrashHand-webfont.eot');
-	src: url('../fonts/TrashHand-webfont.eot?iefix') format('eot'),
-	     url('../fonts/TrashHand-webfont.woff') format('woff'),
-	     url('../fonts/TrashHand-webfont.ttf') format('truetype'),
-	     url('../fonts/TrashHand-webfont.svg#webfont') format('svg');
+/* =====================
+   NAV
+===================== */
+.nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: black;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
 }
 
-
-    /* Aquí hi van propietats generals */
-
-body {
-    background: white;
-    text-align: center;
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-
-}
-.cap{
-    width: auto;
-    height: 300px;
-    text-align: center;
-    align-content: center;
-    
+.nav-logo {
+    color: red;
+    font-size: 1.5rem;
+    font-weight: 700;
 }
 
-li { 
-    width: 10rem;
-    height: 10rem;
+.nav-menu {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-menu a {
+    color: red;
+    text-decoration: none;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.nav-menu a:hover {
+    opacity: 0.6;
+}
+
+/* =====================
+   HERO
+===================== */
+.hero {
+    margin-top: 80px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero h1 {
+    font-size: 10rem;
+    font-weight: 900;
+    color: black;
+}
+
+.hero h2 {
+    font-size: 4rem;
+    font-weight: 300;
+    color: black;
+}
+
+/* =====================
+   MAIN
+===================== */
+.contenido {
+    flex: 1;
+    padding: 80px 20px;
+}
+
+/* =====================
+   SECCIONES
+===================== */
+.seccion {
+    max-width: 1200px;
+    margin: 500px auto;
+    padding: 20px;
+    text-align: left;
+}
+
+/* TITULOS */
+.seccion h3 {
+    font-size: 4rem;
+    margin-bottom: 2rem;
+    color: #222;
+}
+
+/* PARRAFOS */
+.seccion p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #333;
+    margin-bottom: 1.5rem;
+}
+
+/* =====================
+   SOBRE MI
+===================== */
+.sobre-mi-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.sobre-texto {
+    flex: 1;
+}
+
+.sobre-imagen {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.sobre-imagen img {
+    max-width: 100%;
+    max-height: 400px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+    object-fit: cover;
+}
+
+/* =====================
+   GRID ACTIVIDADES Y ALTRES
+===================== */
+.grid {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.grid li {
+    width: 12rem;
+    height: 12rem;
     border-radius: 50%;
-    background: blue;
-    margin: 1rem;
-    float: left;
-    list-style-type: none;
-    text-align: center;
-    align-content: center;
+    background: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
- a:link{
-    line-height: 10rem;
+#altres .grid li:hover {
+    transition: 2s;
+    background: linear-gradient(45deg,firebrick, blue);
+    transform: rotate(360deg);
+}
+
+.grid a {
     color: white;
     text-decoration: none;
- }
- a:visited{
-    color: white;
- }
- a:hover{
-    color: red;
-
- }
-
- a:active{
-    color: aqua;
- }
-ul {
-    width: 36rem;
-    margin: auto;
-    margin-top: 500px;
-
+    font-size: 1.2rem;
+    text-align: center;
 }
 
-h1{
-   font-size: 200px;
-    color:black;
-    text-align: top;
-    font-family: 'mario';
-    
- }
+.grid a:hover {
+    color: red;
+}
 
+/* =====================
+   FOOTER
+===================== */
+.footer {
+    background: black;
+    color: red;
+    text-align: center;
+    padding: 30px;
+}
 
+/* =====================
+   BACKGROUND ANIMADO
+===================== */
+.background {
+    position: fixed;
+    inset: 0;
+    background: linear-gradient(270deg, #0059ff7a, #bbd8ff, darkred);
+    background-size: 800% 800%;
+    animation: gradient 15s ease infinite;
+    z-index: -1;
+}
 
+@keyframes gradient {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
 
-    /* Aquí hi van propietats responsives */
-
-
-
-@media (max-width:480px) 
-    /* Aquí hi va la versió mòbil */
- {
-
-    
- }
-
-@media (min-width:481px) and (max-width:1279px) 
- {
-
-        li {
-            background: green;
-        }
-    
- }
-
-
-@media (min-width:1280px)
- {
-    body {
-        background: pink;
+/* =====================
+   RESPONSIVE
+===================== */
+@media (max-width: 992px) {
+    .sobre-mi-container {
+        flex-direction: column;
+        gap: 1.5rem;
     }
 
- }
+    .sobre-imagen img {
+        max-height: 300px;
+    }
+}
 
- .h1{
-    size: 2rem;
-    color:aquamarine;
- }
+@media (max-width: 480px) {
+    .hero h1 {
+        font-size: 4rem;
+    }
+
+    .hero h2 {
+        font-size: 1.5rem;
+    }
+
+    .seccion h3 {
+        font-size: 2rem;
+    }
+
+    .seccion p {
+        font-size: 1rem;
+    }
+
+    .sobre-imagen img {
+        max-height: 250px;
+    }
+
+    .grid li {
+        width: 80%;
+    }
+}
