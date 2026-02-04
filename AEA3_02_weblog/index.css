@@ -1,14 +1,14 @@
-body{
+body {
     margin: 0;
-    font-family: helvetica;
- }
-
-h1{
-    color: purple;
-    text-align: center;
-    text-shadow: 1px 1px 4px grey;
+    font-family:Helvetica;
 }
-.contenidor{
+h1 {
+    color:purple;
+    text-shadow: 2px 2px 2px grey;
+    text-align: center;
+}
+
+.contenidor {
     width: 1280px;
     margin: auto;
 }
@@ -16,45 +16,148 @@ h1{
 .cap{
     height: 120px;
 }
-.cos{
+
+.cos {
     overflow: auto;
     overflow: hidden;
-    overflow:visible ;
+    overflow: visible;
     overflow: scroll;
+    height: 800px;
 }
 
-.peu{
-    background-color:black;
-    height: 300px;
+.peu {
+    background-color: black;
+    height: 300px
 }
 
-li{
-    background-color: white;
+li {
     height: 50px;
     width: 180px;
     margin: 10px;
     float: left;
 }
-
 .esquerra, .centre, .dreta {
     width: 20%;
-     float:left ;
+    float: left;
 }
-.esquerra{
+.esquerra {
 }
 
-.centre{
-    background-color: purple;
+.centre {
     width: 60%;
     overflow: scroll;
+    background-color: purple;
     color: white;
     height: 600px;
 }
-.dreta{
-    background-color: yellowgreen;
+
+.dreta {
 }
 
-p{
+p {
     text-indent: 50px;
     padding: 10px;
+}
+
+
+/* CSS CodePen */
+
+
+#alternador {
+  width: 5rem;
+  height: 5rem;
+  position: absolute;
+  top: .5rem;
+  left: 0.5rem;
+  border-radius: 0.5rem;
+}
+
+#alternador label {
+  width: 5rem;
+  height: 4rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: .5rem;
+  cursor: pointer;
+  padding-top: 1rem;
+  transition: all 0.5s ease;
+  opacity: 1;
+}
+
+
+#alternador h1 {
+  margin-left: 6.5rem;
+}
+
+#alternador b {
+  display: block;
+  width: 4rem;
+  height: 0.5rem;
+  background: black;
+  margin-bottom: .5rem;
+  margin-left:0.5rem;
+}
+
+#alternador input[type="checkbox"] {
+  visibility: hidden;
+}
+
+
+#alternadorp {
+  display: none;
+}
+
+{
+  
+  font-family: Arial, Sans-serif;
+}
+
+#alternador ul {
+  width: 10rem;
+  margin-top: 2.5rem;
+  list-style-type: none;
+  padding: 0 10px 0 0;
+  border-radius: 5%;
+}
+
+#alternador li {
+    width: 100%;
+    border: solid 1px white;
+    line-height: 2rem;
+    padding: .2rem;
+    text-align: center;
+    border-radius: 5%;
+    background: linear-gradient(black, grey);
+    margin: 0 auto;
+    height: 3rem;   
+    float: none;
+}
+
+#alternador li:hover {
+  border-bottom: solid 3px red;
+  box-shadow: inset 0 5px 5px black;
+  
+}
+
+#alternador a {
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+#alternador .desplega {
+  position: absolute;
+  left: -11rem;
+  opacity: 1;
+  transition: all 0.5s ease;
+}
+
+#alternador input[type="checkbox"]:checked+label {
+  opacity:1;
+}
+
+#alternador input[type="checkbox"]:checked+label~.desplega {
+  left: 0;
 }
