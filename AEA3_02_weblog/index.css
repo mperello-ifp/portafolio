@@ -115,7 +115,7 @@ p {
 
 #alternador ul {
   width: 10rem;
-  margin-top: 2.5rem;
+  margin-top: 3rem;
   list-style-type: none;
   padding: 0 10px 0 0;
   border-radius: 5%;
@@ -160,4 +160,73 @@ p {
 
 #alternador input[type="checkbox"]:checked+label~.desplega {
   left: 0;
+}
+
+
+
+/* Elements responsius */
+@media (max-width:480px)
+{
+ #alternador{
+    display:visible;
+
+  }  
+  
+
+.menuhoritzontal{
+  display:none;
+
+}
+
+
+    body {
+        background-color: var(--color6);
+    }
+}
+
+@media (min-width:481px) and (max-width:1279px)
+{
+   #alternador{
+    display:visible;
+
+  }  
+  
+
+.menuhoritzontal{
+  display:none;
+
+}
+  
+  
+  
+  body {
+        background-color: var(--color7);
+    }
+
+    p{
+        margin:2rem;
+    }
+}
+
+@media (min-width:1280px)
+{
+  #alternador{
+    display:none;
+
+  }  
+  
+
+.menuhoritzontal{
+  display:visible;
+
+}
+
+  body {
+        background-color: var(--color5);
+    }
+
+    p{
+        columns: 2;
+        text-align:justify;
+    }
 }
