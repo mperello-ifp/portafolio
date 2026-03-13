@@ -1,0 +1,95 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-image:linear-gradient( 45deg, white 0%, white 25%, pink 50%, pink 100%);
+    font-family: helvetica;
+}
+.titol{
+    text-align: center;
+    font-size:4rem;
+}
+.cap{
+    height:589px;
+    width: 960px;
+    margin: auto;
+}
+
+.cos{
+    width: 960px;
+    margin: auto;
+    padding: 20px 0;
+}
+
+.peu{
+    height: 200px;
+    width: 960px;
+    margin: auto;
+    background-image: url(img/logo_carsandfilms.png);
+    background-repeat: no-repeat;
+}
+
+.fila1,
+.fila2,
+.fila3{
+    height: 240px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+
+.cotxe{
+    background-image: url(img/ani/team.png);
+    height:550px;
+    margin: auto;
+}
+.producte{
+    background-size: cover;
+    background-position: center;
+    height: 200px;
+    width: 300px;
+    display: flex;
+    align-items: flex-end;
+}
+
+.nom{
+    height:40px;
+    width: 100%;
+    background: white;
+    text-align: center;
+    line-height: 40px;
+}
+
+
+.producte:hover{
+  transition: 2s;
+    background: linear-gradient(45deg);
+    transform: rotate(360deg);
+    background-repeat: no-repeat;
+
+}
+
+/* ANIMACION*/
+
+
+
+.cotxe {
+  width: 900px;
+  height: 500px;
+  background-image: url("img/ani/back.png");
+  background-size: cover;
+  animation: rotarColores 12s infinite; 
+}
+
+@keyframes rotarColores {
+  0%   { background-image: url("img/ani/back.png"); }
+  12.5%  { background-image: url("img/ani/bean.png"); }
+  25%   { background-image: url("img/ani/bond.png"); }
+  37.5% { background-image: url("img/ani/break.png"); }
+  50%   { background-image: url("img/ani/ghost.png"); }
+  62.5% { background-image: url("img/ani/pulp.png"); }
+  75%   { background-image: url("img/ani/rider.png"); }
+  87.5% { background-image: url("img/ani/taxi.png"); }
+  100%  { background-image: url("img/ani/team.png"); }
+}
